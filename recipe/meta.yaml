@@ -1,4 +1,4 @@
-{% set version = "7.3-17" %}
+{% set version = "7.3-18" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nnet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nnet/nnet_{{ version }}.tar.gz
-  sha256: ee750bb8164aa058edf93823af987ab2c7ec64128dce2abeaae1b7d3661e9a67
+  sha256: d29aebfb5cb00071eecf754d55db5d474a6fda88860df5c9d31ba89aa8d9e3d0
 
 build:
   merge_build_host: true  # [win]
